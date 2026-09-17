@@ -1,0 +1,10 @@
+freshfit-gym/
+│
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│   ├── gym.jpg
+│   ├── trainer1.jpg
+│   └── trainer2.jpg
+└── README.md
