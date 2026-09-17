@@ -1,39 +1,187 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
-header {
-    background: #00c853;
-    color: white;
-    text-align: center;
-    padding: 40px;
+body{
+font-family:Arial,sans-serif;
+line-height:1.6;
 }
 
-nav {
-    background: #222;
-    text-align: center;
-    padding: 15px;
+.navbar{
+background:#111;
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+position:sticky;
+top:0;
+z-index:100;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
+.logo{
+color:#00cc66;
+font-size:28px;
+font-weight:bold;
 }
 
-section {
-    padding: 30px;
+.navbar ul{
+display:flex;
+list-style:none;
 }
 
-h2 {
-    color: #00c853;
+.navbar ul li{
+margin-left:20px;
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.navbar ul li a{
+color:white;
+text-decoration:none;
 }
+
+.hero{
+height:100vh;
+background:linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.6)
+),
+url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:22px;
+margin:15px 0;
+}
+
+.btn{
+background:#00cc66;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#00cc66;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card,
+.plan{
+background:#f4f4f4;
+padding:25px;
+border-radius:10px;
+width:280px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.plan{
+background:#00cc66;
+color:white;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table th,
+table td{
+padding:15px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+#bmi{
+text-align:center;
+}
+
+#bmi input{
+padding:10px;
+margin:10px;
+width:220px;
+}
+
+#bmi button{
+padding:10px 20px;
+background:#00cc66;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+}
+
+form button{
+width:100%;
+padding:12px;
+background:#00cc66;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+text-align:center;
+}
+
+.navbar ul{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
+``
